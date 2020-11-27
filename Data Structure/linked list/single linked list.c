@@ -7,6 +7,7 @@ struct node{
 };
 
 struct node *head;
+struct node *temp;
 
 struct node *createnode(int ele){
     struct node *p;
@@ -16,18 +17,30 @@ struct node *createnode(int ele){
     return p;
 }
 
-void display(){
-    if(head == NULL)
-        printf("empty list");
-    else{
-        struct node *q;
-        q = head;
-        while(q != NULL){
-            printf("%d  ", q->info);
-            q = q->next;
-        }
-    printf("\n");
-    }
+// void display(){
+//     if(head == NULL)
+//         printf("empty list");
+//     else{
+//         struct node *q;
+//         q = head;
+//         while(q != NULL){
+//             printf("%d  ", q->info);
+//             q = q->next;
+//         }
+//     printf("\n");
+//     }
+// }
+
+// q = head;
+void display(struct node *q){
+if(q->next == NULL){
+    printf("%d ", q->info);
+    return ;
+}
+else{
+    printf("%d ", q->info);
+    display(q->next);
+}
 }
 
 void insertfront(int ele){
@@ -40,7 +53,7 @@ void insertfront(int ele){
         p->next = head;
         head = p;
     }
-    display();
+    // display();
 }
 
 void deletefront(){
@@ -49,14 +62,14 @@ void deletefront(){
     else if(head->next == NULL){
         free(head);
         head = NULL;
-        display();
+        // display();
     }
     else{
         struct node *q;
         q = head;
         head = head->next;
         free(q);
-        display();
+        // display();
     }
 }
 
@@ -73,7 +86,7 @@ void insertend(int ele){
             q = q->next;
         q->next = p;
     }
-    display();
+    // display();
 }
 
 void deleteend(){
@@ -82,7 +95,7 @@ void deleteend(){
     else if(head->next == NULL){
         free(head);
         head = NULL;
-        display();
+        // display();
     }
     else{
         struct node *q, *p;
@@ -92,7 +105,7 @@ void deleteend(){
         p = q->next;
         q->next = NULL;
         free(p);
-        display();
+        // display();
     }
 }
 
@@ -109,7 +122,9 @@ int main(){
                     scanf("%d", &ele);
                     insertfront(ele);
                     break;
-            case 2: display();
+            case 2:
+                    temp = head;
+                    display(temp);
                     break;
             case 3: deletefront();
                     break;
