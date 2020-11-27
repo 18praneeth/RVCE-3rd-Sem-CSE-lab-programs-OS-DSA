@@ -68,7 +68,7 @@ void displaymatrix(NODE start, int row, int col){
 
 int main()
 {
-    NODE start == NULL;
+    NODE start = NULL;
     int m, n, i, j, item;
     printf("Read order of Matrix\n");
     scanf("%d%d", &m,&n);
@@ -80,6 +80,6 @@ int main()
         }
     }
     dispalay(start);
-    displaymatrix(start, m, n)
+    displaymatrix(start, m, n);
     return 0;
 }
