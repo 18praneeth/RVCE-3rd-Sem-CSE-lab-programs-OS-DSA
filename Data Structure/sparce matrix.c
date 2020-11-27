@@ -71,18 +71,30 @@ void displaymatrix(NODE start, int row, int col){
 int main()
 {
     NODE start = NULL;
-    int m, n, i, j, item;
-    printf("\nRead order of Matrix\n");
+    int m, n, i, j, item, temp, row, col;
+    printf("\nEnter the order of Sparse Matrix\n");
     scanf("%d%d", &m,&n);
-    printf("\nRead Matrix\n");
-    for(i=1; i<=m; i++){
-        for(j=1; j<=n; j++){
-            scanf("%d", &item);
-            if(item != 0){
-                start = insertend(start, i, j, item);
-            }
-        }
+    // printf("\nRead Matrix\n");
+    printf("\nEnter the number of non-zero entries:");
+    scanf("%d", &temp);
+    printf("\nNOTE: Please take first index as 1\n");
+    for(i=1; i<=temp; i++){
+        printf("\nEnter the row number of [%d] element: ", i);
+        scanf("%d", &row);
+        printf("\nEnter the col number of [%d] element: ", i);
+        scanf("%d", &col);
+        printf("\nEnter the [%d] element:", i);
+        scanf("%d", &item);
+        start = insertend(start, row, col, item);
     }
+    // for(i=1; i<=m; i++){
+    //     for(j=1; j<=n; j++){
+    //         scanf("%d", &item);
+    //         if(item != 0){
+    //             start = insertend(start, i, j, item);
+    //         }
+    //     }
+    // }
     printf("The linked list is:\n");
     dispalay(start);
     displaymatrix(start, m, n);
