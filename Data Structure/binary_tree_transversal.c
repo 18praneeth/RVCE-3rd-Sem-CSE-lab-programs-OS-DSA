@@ -55,3 +55,30 @@ void preorder_iter(NODE root){
     }
 }
 
+// Iterative function to perform inorder traversal
+
+void inorder_iter(NODE root){
+    NODE cur, s[10];
+    int top = -1;
+    if(root != NULL){
+        printf("No Traversal\n");
+        return;
+    }
+    cur = root;
+    while(1){
+        while(cur != NULL){
+            s[++ top] = cur;
+            cur = cur->left
+        }
+        if(top != -1){
+            cur = s[top--];
+            printf("%d\t", cur->data );
+            cur = cur->right;
+        }
+        else{
+            return;
+        }
+    }
+}
+
+
