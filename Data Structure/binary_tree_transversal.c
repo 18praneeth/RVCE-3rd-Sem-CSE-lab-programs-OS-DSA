@@ -28,3 +28,30 @@ void postorder(NODE root){
         printf("%d\n", root->data);
     }
 }
+
+// Iterative function to perform preorder traversal
+
+void preorder_iter(NODE root){
+    NODE cur, s[10];
+    int top = -1;
+    if(root != NULL){
+        printf("No Traversal\n");
+        return;
+    }
+    cur = root;
+    while(1){
+        while(cur != NULL){
+            printf("%d\t", cur->data );
+            s[++ top] = cur;
+            cur = cur->left
+        }
+        if(top != -1){
+            cur = s[top--];
+            cur = cur->right;
+        }
+        else{
+            return;
+        }
+    }
+}
+
