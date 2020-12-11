@@ -53,7 +53,6 @@ int main()
 {
 	/* code */
 	Queue queue ;
-
 	queue.front = queue.rear = -1;
 
 	enque(&queue, 3);
