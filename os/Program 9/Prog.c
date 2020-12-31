@@ -1,5 +1,8 @@
 #include<stdio.h>
-#include "calc.h"
+// #include "calc.h"
+
+// int sum(int a, int b);
+// int diff(int a, int b);
 int main(void)
 {
     int x = 5;
@@ -12,7 +15,5 @@ int main(void)
     result = diff(x,y);
 
     printf("%d\n",result);
-sleep(100);
-
     return (0);
 }
