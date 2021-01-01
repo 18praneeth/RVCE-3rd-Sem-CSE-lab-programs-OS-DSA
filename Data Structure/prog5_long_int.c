@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+#include <malloc.h>
 
 struct Node
 {
@@ -8,6 +8,7 @@ struct Node
 };
 
 typedef struct Node *NODE;
+
 NODE insertBegin(NODE head, int item)
 {
     NODE temp;
@@ -23,6 +24,7 @@ NODE insertBegin(NODE head, int item)
     head->address = temp;
     return head;
 }
+
 NODE insertEnd(NODE head, int item)
 {
     NODE temp, cur;
@@ -43,24 +45,26 @@ NODE insertEnd(NODE head, int item)
     temp->address = head;
     return head;
 }
+
 void Display(NODE head)
 {
     NODE temp;
     if (head->address == head)
     {
-        cout << "List is Empty" << endl;
+        printf("List is Empty\n");
     }
     else
     {
         temp = head->address;
         while (temp != head)
         {
-            cout << temp->digit;
+            printf("%d", temp->digit);
             temp = temp->address;
         }
-        cout << endl;
+        printf("\n");
     }
 }
+
 void addZero(NODE head1, NODE head2)
 {
     int ct1 = 1, ct2 = 1, i;
@@ -92,6 +96,7 @@ void addZero(NODE head1, NODE head2)
         }
     }
 }
+
 NODE Reverse(NODE head)
 {
     NODE cur, prev, next;
@@ -107,6 +112,7 @@ NODE Reverse(NODE head)
     head->address = prev;
     return head;
 }
+
 void Add(NODE head1, NODE head2)
 {
     NODE head, t1, t2;
@@ -130,9 +136,10 @@ void Add(NODE head1, NODE head2)
     {
         head = insertBegin(head, carry);
     }
-    cout << "Final Added Number is : ";
+    printf("Final Added Number is : ");
     Display(head);
 }
+
 int main()
 {
     char first[20], second[20];
@@ -141,22 +148,22 @@ int main()
     head2 = (NODE)malloc(sizeof(struct Node));
     head1->address = head1;
     head2->address = head2;
-    cout << "Enter First Number : ";
-    cin >> first;
+    printf("Enter First Number : ");
+    scanf("%s", &first);
     for (int i = 0; first[i] != '\0'; i++)
     {
         head1 = insertEnd(head1, first[i] - '0');
     }
-    cout << "Enter Second Number : ";
-    cin >> second;
+    printf("Enter Second Number : ");
+    scanf("%s", &second);
     for (int i = 0; second[i] != '\0'; i++)
     {
         head2 = insertEnd(head2, second[i] - '0');
     }
     addZero(head1, head2);
-    cout << "First Number : ";
+    printf("First Number : ");
     Display(head1);
-    cout << "Second Number : ";
+    printf("Second Number : ");
     Display(head2);
     Add(head1, head2);
     return 0;
