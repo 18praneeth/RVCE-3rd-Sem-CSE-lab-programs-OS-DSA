@@ -8,12 +8,13 @@
 <ol>
 
 <li>
-<a href="/Data Structure/prog1.c">Use Stack operations to do the following:</a>
+<a href="/Data Structure/prog1.c">Use Stack operations to do the following:
 <ul>
     <li>Assign to avariable name Y the value of the third element from the top of the stack and keep the stack undisturbed.</li>
     <li>Given an arbitrary integer n pop out the top n elements. A message should be displayed if an unusual condition is encountered</li>
     <li>Assign to a variable name Y the value of the third element from the bottom of the stack and keep the stack undisturbed.</li>
 </ul>
+</a>
 </li>
 
 <li>
@@ -56,34 +57,56 @@
 <ol>
 
 <li>
+<a href="Operating System/Set 1/Prog 1">
 <strong>Implementation of basic UNIX commands using file APIs-</strong> Write a program to implement commands ls( -l option), cp, rm and mv using UNIX file APIs.
+</a>
 </li>
 
 <li>
+<a href="Operating System/Set 1/Prog 2">
 <strong>Process control system calls- </strong>Application to demonstrate use of fork, execve, wait, getpid, exit system calls
+</a>
 </li>
 
 <li>
+<a href="Operating System/Set 1/Prog 3">
 <strong>Thread creation and management using Pthread Library- </strong> Application to demonstrate use of pthread library functions to create and manage threads
+</a>
 </li>
 
 <li>
+<a href="Operating System/Set 1/Prog 4">
 <strong>Process scheduling and process priority –</strong> Modify the default scheduling algorithm for MINIX or XV6 operating system.
+</a>
 </li>
 
 <li>
+<a href="Operating System/Set 1/Prog 5">
 <strong>Process/Thread synchronization -</strong> Application to demonstrate process/thread synchronization using semaphores and mutex. Implement Dining philosophers problem, reader-writer and  producer-consumer
+</a>
 </li>
 
 <li>
+<a href="Operating System/Set 1/Prog 6">
 <strong>Process/Thread synchronization for file access -</strong> Application to demonstrate process/thread synchronization using file locks. 
+</a>
 </li>
 
-<li><strong>Deadlock- </strong> Write a program that implements the Bankers’ algorithm for deadlock avoidance. The program should check for safe sequence and resource request algorithm. </li>
+<li>
+<a href="Operating System/Set 1/Prog 7">
+<strong>Deadlock- </strong> Write a program that implements the Bankers’ algorithm for deadlock avoidance. The program should check for safe sequence and resource request algorithm. 
+</a></li>
 
-<li><strong>Memory management- </strong>Write a program to simulate Buddy memory allocation algorithm.</li>
+<li>
+<a href="Operating System/Set 1/Prog 8"><strong>Memory management- </strong>Write a program to simulate Buddy memory allocation algorithm.
+</a>
+</li>
 
-<li><strong>Static and Shared libraries- </strong> Write a program to create and use static and shared libraries. Demonstrate the advantage of shared libraries over static libraries in terms of memory usage.</li>
+<li>
+<a href="Operating System/Set 1/Prog 9">
+<strong>Static and Shared libraries- </strong> Write a program to create and use static and shared libraries. Demonstrate the advantage of shared libraries over static libraries in terms of memory usage.
+</a>
+</li>
 
 
 </ol>
