@@ -8,7 +8,7 @@
 <ol>
 
 <li>
-<a href="/Data \Structure/prog1.c">Use Stack operations to do the following:</a>
+<a href="/Data Structure/prog1.c">Use Stack operations to do the following:</a>
 <ul>
     <li>Assign to avariable name Y the value of the third element from the top of the stack and keep the stack undisturbed.</li>
     <li>Given an arbitrary integer n pop out the top n elements. A message should be displayed if an unusual condition is encountered</li>
