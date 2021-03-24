@@ -5,8 +5,8 @@
 
 
 int main(int argc, char* argv[]){
-	if(argc!=3){
-		printf("Usage: execl <int1> <int2>\n");
+	if(argc!=2){
+		printf("Usage: execl <int1>\n");
 		exit(0);
 	}
 	
@@ -21,7 +21,7 @@ int main(int argc, char* argv[]){
 		printf("Child: \n");
 		printf("Child Process id: %d\n", getpid());
 		printf("Child Parent Process id: %d\n", getppid());
-		execv("sum_diff", argv);
+		execv("sum", argv);
 		exit(0);		
 	}
 	else{
@@ -33,15 +33,3 @@ int main(int argc, char* argv[]){
 	
 	return 0;	
 }
-
-
-
-
-
-
-
-
-
-
-
-
