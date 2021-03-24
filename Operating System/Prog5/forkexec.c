@@ -19,12 +19,15 @@ int main(int argc, char* argv[]){
 	}
 	else if(pid == 0){
 		printf("Child: \n");
+		printf("Child Process id: %d\n", getpid());
+		printf("Child Parent Process id: %d\n", getppid());
 		execv("sum_diff", argv);
 		exit(0);		
 	}
 	else{
 		wait(0);
 		printf("\nParent: \n");
+		printf("Parent Process id: %d\n", getpid());
 	}
 	
 	return 0;	
