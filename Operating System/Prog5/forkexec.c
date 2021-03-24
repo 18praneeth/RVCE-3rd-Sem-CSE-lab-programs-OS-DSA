@@ -28,6 +28,7 @@ int main(int argc, char* argv[]){
 		wait(0);
 		printf("\nParent: \n");
 		printf("Parent Process id: %d\n", getpid());
+		printf("Parent child Process id: %d\n", pid);
 	}
 	
 	return 0;	
