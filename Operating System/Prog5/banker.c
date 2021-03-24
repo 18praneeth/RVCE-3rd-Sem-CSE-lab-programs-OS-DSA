@@ -64,9 +64,9 @@ int main(){
 			completed[i] = 1;
 			for(j=0; j<resources; j++)
 				available[j] += allocated[i][j];
-				printf("P[%d] ", i+1);
-				finished++;
-				last_fin = i;
+			printf("P[%d] ", i+1);
+			finished++;
+			last_fin = i;
 		}
 		
 		if(finished == processes){
