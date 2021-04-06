@@ -2,7 +2,12 @@
 
 ```
 There are two set of Program
-You can check sample Outputs for commands
+For exams preferably refer to Minimized version folder.
+You can check sample Outputs for commands, also you can refer to pdf file which has all the programs with output
+```
+
+```
+    PR is welcomed :)
 ```
 
 <hr>
@@ -32,7 +37,7 @@ You can check sample Outputs for commands
 </li>
 
 <li>
-<strong>Process/Thread synchronization for file access -</strong> Application to demonstrate process/thread synchronization using file locks. 
+<strong>Process/Thread synchronization for file access -</strong> Application to demonstrate process/thread synchronization using file locks.
 </li>
 
 <li><strong>Deadlock- </strong> Write a program that implements the Bankers’ algorithm for deadlock avoidance. The program should check for safe sequence and resource request algorithm. </li>
