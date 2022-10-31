@@ -1,7 +1,7 @@
 # 3rd-sem-lab-programs for RV College of Engineering
 <hr>
 
-## Data Structures
+## Data Structures and Applications
 
 ### List of Programs
 
